@@ -1,24 +1,22 @@
-/* Reset */
-* {
-  box-sizing: border-box;
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
 }
 
 body {
-  background: #f4f7f8;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
   color: #333;
   line-height: 1.6;
-  padding: 20px;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px 40px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border-radius: 8px;
 }
 
@@ -27,24 +25,25 @@ header {
   margin-bottom: 30px;
 }
 
-header h1 {
-  font-size: 2.4em;
+.profile-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2ECC71; /* nice green */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.4rem;
   margin-bottom: 5px;
-  color: #2c3e50;
 }
 
-header p {
-  font-size: 1.1em;
-  color: #7f8c8d;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 8px;
-  font-size: 0.9em;
-  color: #555;
+.title {
+  font-size: 1.1rem;
+  color: #2ECC71;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 section {
@@ -52,43 +51,17 @@ section {
 }
 
 h2 {
-  border-bottom: 2px solid #2980b9;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #2ECC71;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  color: #2980b9;
-}
-
-.section-content p, ul {
-  margin-left: 20px;
 }
 
 ul {
   list-style-type: disc;
-  margin-top: 8px;
+  padding-left: 20px;
 }
 
-ul li {
+li {
   margin-bottom: 8px;
 }
-
-.skills {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.skill {
-  background: #2980b9;
-  color: white;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.85em;
-}
-
-.date {
-  font-style: italic;
-  color: #7f8c8d;
-  font-size: 0.9em;
-  float: right;
-}
-
